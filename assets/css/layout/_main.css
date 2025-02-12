@@ -1,0 +1,115 @@
+.site-main {
+    margin-top: 100px;
+}
+
+.page,
+.single-post,
+.projects {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    /*overflow-y: auto;*/
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2, h3, h4, h5, p {
+    margin-block-start: unset;
+    margin-block-end: unset;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wp-block-table {
+    overflow: auto;
+    border-spacing: unset;
+    line-height: var(--p-line-height);
+    max-width: 616px;
+    margin: auto;
+    padding: var(--block--padding-horizontal);
+
+    &.margin-top {
+        margin-top: var(--block--margin-top);
+    }
+
+    &.margin-bottom {
+        margin-bottom: var(--block--margin-bottom);
+    }
+
+    thead {
+        background: var(--color-blue-light);
+        border-bottom: unset;
+
+        th {
+            color: var(--color-white);
+            font-size: var(--font-size-base);
+            font-weight: 400;
+            border: unset;
+            text-align: left;
+            padding: 4px 12px;
+        }
+    }
+
+    tr:nth-child(even) {
+        background: var(--color-blue-lightest);
+    }
+
+    td {
+        border: unset;
+        padding: 4px 12px;
+        color: var(--color-grey-dark-grey);
+    }
+}
+
+.wp-block-list {
+    margin: var(--block--margin);
+}
+.wp-block-list,
+.block-single-column-text ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    color: var(--color-grey-dark-grey);
+    font-size: var(--font-size-base);
+    line-height: var(--p-line-height);
+
+    li {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    li::before {
+        content: '';
+        height: 2px;
+        width: 21px;
+        background: var(--color--primary);
+        margin-top: 10px;
+        flex: 0 0 auto;
+    }
+}
+.wp-block-list {
+    margin: var(--block--margin);
+    padding: var(--block--padding);
+}
+
+@media screen and (min-width: 744px) {
+    .wp-block-list li::before,
+    .block-single-column-text ul li::before {
+        width: 47px !important;
+    }
+}

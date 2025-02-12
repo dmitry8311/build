@@ -1,0 +1,201 @@
+/* General styles for the contact form */
+.contact-form {
+    padding: 28px 16px;
+    max-width: 616px;
+    margin: 0 auto;
+    color: var(--color-grey-dark-grey);
+}
+
+/* Adjust padding for larger screens */
+@media (min-width: 744px) {
+    .contact-form {
+        padding: 0 49px;
+    }
+}
+
+/* Styles for list items in the contact form */
+.wpcf7-list-item {
+    margin: 0;
+}
+
+.wpcf7-list-item:before {
+    content: none;
+}
+
+/* Styles for labels within list items */
+.wpcf7-list-item label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Appearance reset for checkboxes */
+.wpcf7-list-item label input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+}
+
+/* Checkbox styling */
+.wpcf7-list-item label input[type="checkbox"]:before {
+    content: '\2713';
+    font-size: 16px;
+    color: transparent;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-grey-medium-grey);
+    border-radius: 4px;
+}
+
+/* Checkbox styling for phone contact option */
+.wpcf7-list-item label input[type="checkbox"].phone:before {
+    border: 2px solid var(--color--primary);
+}
+
+/* Checkbox checked state */
+.wpcf7-list-item label input[type="checkbox"]:checked:before {
+    color: var(--color--primary);
+}
+
+/* General field styling */
+.form-container__field {
+    margin-bottom: 12px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Submit button field styling */
+.form-container__field.submit {
+    margin-top: 36px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Submit button alignment */
+.form-container__field.submit p {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for acceptance links */
+.form-container__field.acceptance a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--color-grey-dark-grey);
+}
+
+/* Input and textarea styling */
+.form-container__input,
+.form-container__textarea {
+    width: 100%;
+    background: var(--color-grey-lighter-grey);
+    padding: 4px 12px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: var(--font-size-base);
+    line-height: var(--p-line-height);
+}
+
+/* Focus state for input and textarea */
+.form-container__input:focus-visible,
+.form-container__textarea:focus-visible {
+    border: 1px solid var(--color--primary);
+    outline: none;
+}
+
+/* Checkbox and radio container styling */
+.form-container__checkbox,
+.form-container__radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Hide default checkbox and radio input */
+.form-container__checkbox input[type="checkbox"],
+.form-container__radio input[type="radio"] {
+    display: none;
+}
+
+/* Label styling for checkboxes and radios */
+.form-container__checkbox .wpcf7-list-item-label,
+.form-container__radio .wpcf7-list-item-label {
+    padding: 4px 12px;
+    border: 1px solid var(--color--primary);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Checked state for custom checkboxes and radios */
+.form-container__checkbox input[type="checkbox"]:checked + .wpcf7-list-item-label,
+.form-container__radio input[type="radio"]:checked + .wpcf7-list-item-label {
+    background-color: var(--color--primary);
+    color: var(--color-white);
+}
+
+/* Styling for single phone checkbox */
+.form-container__checkbox-single.phone input[type="checkbox"]:before {
+    border: 2px solid var(--color--primary);
+}
+
+.form-container__checkbox-single.phone input[type="checkbox"]:checked:before {
+    color: var(--color--primary);
+}
+
+/* Fieldset padding */
+.form-container__fieldset {
+    padding: 24px 0;
+}
+
+/* Checkbox fieldset margin */
+.form-container__fieldset.checkbox {
+    margin-bottom: 12px;
+}
+
+/* Textarea height */
+.form-container__textarea {
+    height: 120px;
+}
+
+/* Legend margin */
+.form-container__legend {
+    margin-bottom: 16px;
+}
+
+/* Hover state for acceptance links */
+.wpcf7-list-item .form-container__acceptance a:hover {
+    text-decoration: underline;
+}
+
+/* Margin for acceptance checkboxes */
+.form-container__acceptance input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Acceptance link styling */
+.form-container__acceptance a {
+    color: var(--color--primary);
+    text-decoration: none;
+}
+
+/* Submit button styling */
+.form-container__submit {
+    background: var(--color-white);
+    padding: 4px 12px;
+    border: 1px solid var(--color--primary);
+    border-radius: 16px;
+    cursor: pointer;
+    color: var(--color-toned-black);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Submit button hover state */
+.form-container__submit:hover {
+    background: var(--color--primary);
+    color: var(--color-white);
+}

@@ -1,0 +1,93 @@
+:root {
+    --layout-max-width: 1280px;
+    --block--margin-top: 64px;
+    --block--margin-bottom: 64px;
+    --block--padding: 48px 16px;
+    --block--padding-horizontal: 0 16px;
+    --block--padding-vertical: 64px 0;
+    --block-boxed--padding: 24px 0;
+    --color--primary: #1d51f6;
+    --color--secondary: #005FAE;
+    --color-grey-light: #F2F2F2;
+    --color-grey-dark: #182226;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue-light: #007AFF;
+    --color-blue-lightest: #F7F9FF;
+    --color-toned-black: #182226;
+    --color-blue-lighter: #94ADFA;
+    --color-grey-dark-grey: #555;
+    --color-grey-medium-grey: #ACA9A9;
+    --color-grey-light-grey: #EBEBEB;
+    --color-grey-lighter-grey: #F2F2F2;
+
+    --h2-font-size: 42px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --h5-font-size:18px;
+    --font-size-base: 16px;
+    --font-size-small :14px;
+    --font-size-large :64px;
+    --font-size-xlarge :96px;
+
+    --link-decoration: none;
+
+    --h2-font-weight: 700;
+    --h3-font-weight: 700;
+    --h4-font-weight: 700;
+    --h5-font-weight: 700;
+
+    --h2-line-heigth: 1.16;
+    --h3-line-heigth: 1.19;
+    --h4-line-heigth: 1.16;
+    --h5-line-heigth: 1.33;
+
+    --p-line-height: 1.5;
+
+    --h2-margin: 0 auto 24px auto;
+    --h2-margin-top:24px;
+    --h2-boxed-margin: 0 auto 24px auto;
+    --h3-margin: 0 auto 24px auto;
+    --h3-margin-top:24px;
+    --h4-margin: 0 auto 24px auto;
+    --h4-margin-top: 24px;
+    --h5-margin: 0 auto 16px auto;
+    --h5-margin-top: 16px;
+    --p-boxed-margin: 0 auto 48px auto;
+
+    --font-family-secondary: 'B Ruston47 1.5', system-ui, sans-serif;
+    --text-transform-uppercase: uppercase;
+}
+
+@media screen and (max-width: 744px) {
+    :root {
+        /*--block--padding: 48px 16px;*/
+        --h2-font-size: 36px;
+        --h3-font-size: 32px;
+        --h4-font-size: 22px;
+        --h5-font-size: 20px;
+        --font-size-base: 15px;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    :root {
+        --h2-line-heigth: 1.24;
+        --p-line-height: 1.5;
+        --block-boxed--padding: 48px 0;
+        --h2-boxed-margin: 0 auto 48px auto;
+        --h2-margin: 0 auto 32px auto;
+        --h2-margin-top: 32px;
+        --h5-margin: 0 auto 24px auto;
+        --h5-margin-top:24px;
+        --font-size-large: 96px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --block--padding-horizontal: 0 64px;
+        --block--padding: 64px;
+    }
+}

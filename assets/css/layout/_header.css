@@ -1,0 +1,117 @@
+.header {
+    background: linear-gradient(180deg, #fff 50%, rgba(255, 255, 255, 0.00) 100%);
+    height: 78px;
+    display: flex;
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 1199px) {
+    .header {
+        background: #fff;
+    }
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 72px;
+    align-items: center;
+    margin: auto;
+    padding: 0 50px;
+}
+@media (max-width: 744px) {
+    .header__body {
+        padding: 0 15px;
+    }
+}
+.header__logo {
+    margin-right: auto;
+}
+.menu-main-menu-container ul {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    column-gap: 48px;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 32px;
+}
+@media (min-width: 1199px) {
+    .menu-main-menu-container ul {
+        flex-direction: row;
+        column-gap: 12px;
+    }
+}
+@media (min-width: 1199px) {
+    .menu-main-menu-container ul {
+        column-gap: 48px;
+    }
+}
+.menu-main-menu-container ul li {
+    list-style: none;
+}
+.menu-main-menu-container ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.menu-main-menu-container ul .contact-button a {
+    padding: 6px 24px;
+    border-radius: 16px;
+    border: 1px solid var(--color--primary);
+}
+
+.menu-main-menu-container ul .contact-button a:hover {
+    background: var(--color--primary);
+    color: var(--color-white);
+}
+
+@media (min-width: 1199px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 100%;
+}
+.navbar-block {
+    position: absolute;
+    left: 0;
+    top: 78px;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    opacity: 0;
+    overflow: auto;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+@media (min-width: 1199px) {
+    .navbar-block {
+        position: initial;
+        height: initial;
+        opacity: 1;
+        overflow: auto;
+        pointer-events: visible;
+        background: none;
+        transition: none;
+    }
+}
+
+.navbar-block.is-active {
+    opacity: 1;
+    pointer-events: initial;
+}

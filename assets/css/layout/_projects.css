@@ -1,0 +1,177 @@
+
+@import "/wp-content/themes/aarsleff/assets/css/_variables.css";
+
+.content_type_project {
+    --content_type_project-list-style--width: 21px;
+    --content_type_project-list-style--gap: 16px;
+    --content_type_project-list-item--margin: 0 0 18px 0;
+    --content_type_project-color--accent: var(--color--primary);
+    font-size: var(--font-size-base);
+}
+
+.projects {
+    .entry-title {
+        margin: 0 auto 16px auto;
+    }
+}
+
+.content_type_projects__terms {
+    list-style: none;
+    padding-inline-start: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 616px;
+    margin: auto;
+
+    li {
+        display: block;
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 4px 12px;
+        color: var(--color-toned-black);
+        background: var(--color-blue-lighter);
+        border-radius: 24px;
+        text-transform: capitalize;
+    }
+}
+
+.projects {
+    .entry-content-excerpt {
+        padding: var(--block-boxed--padding);
+    }
+}
+
+.content_type_project {
+    background: var(--color-grey-light);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    color: var(--color-grey-dark-grey);
+}
+
+.content_type_project-data {
+    max-width: 616px;
+    margin: auto;
+    padding: var(--block--padding);
+}
+
+.content_type_project__project_value {
+    line-height: 1.5;
+}
+
+.content_type_project__project_column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.content_type_project__project_column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.content_type_project__project_data-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px 16px;
+}
+
+.content_type_project-title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--h5-font-size);
+    font-weight: var(--h5-font-weight);
+    line-height: var(--h5-line-heigth);
+    text-transform: uppercase;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    color: var(--color-toned-black);
+    margin-bottom: 24px;
+}
+
+.content_type_project__project_data_performance-list {
+    list-style: none;
+    padding-inline-start: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+
+    ::before {
+        height: 2px;
+        display: block;
+        width: var(--content_type_project-list-style--width);
+        background: var(--content_type_project-color--accent);
+        content: '';
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: var(--content_type_project-list-style--gap);
+        line-height: 1.5;
+        margin: var(--content_type_project-list-item--margin);
+
+        :first-child {
+            margin-top: unset;
+        }
+
+        :last-child {
+            margin-bottom: unset;
+        }
+    }
+}
+
+.content_type_project__project_data_attachment {
+    grid-column: 1;
+    margin-left: auto;
+
+    a {
+        color: var(--content_type_project-color--accent);
+        font-weight: 500;
+        line-height: 1.5;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    ::after {
+        content: url(/wp-content/themes/aarsleff/assets/img/icons/download.svg);
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 744px) {
+    .content_type_project {
+        --content_type_project-list-style--width: 47px;
+    }
+    .projects {
+        .entry-title {
+            margin: 0 auto 24px auto;
+        }
+    }
+    .content_type_projects__terms a {
+        font-size: 15px;
+    }
+
+    .content_type_project__project_data-content  {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px 16px;
+    }
+
+    .content_type_project__project_data_attachment  {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .content_type_project-title {
+        margin-bottom: 32px;
+    }
+}

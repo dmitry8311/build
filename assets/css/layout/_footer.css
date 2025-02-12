@@ -1,0 +1,233 @@
+.footer {
+    display: flex;
+    background: var( --color--secondary);
+
+    p, ol, ul {
+        margin-block-start: unset;
+        margin-block-end: unset;
+    }
+
+    a {
+        color: var(--color-white);
+        text-decoration: unset;
+    }
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: auto;
+    gap: 20px;
+    padding: 48px 50px 64px 50px;
+}
+
+@media (max-width: 1199px) {
+    .footer-inner {
+        flex-wrap: wrap;
+        row-gap: 80px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 744px) {
+    .footer-inner {
+        flex-direction: column;
+        row-gap: 48px;
+        padding: 48px 15px 64px 15px;
+    }
+}
+
+.footer-inner-logo {
+    min-width: 111px;
+    order: 1;
+    flex: 0 1 20%;
+
+    img {
+        max-width: 111px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer-inner-logo {
+        flex: 0 1 60%;
+    }
+}
+
+.footer-inner-contact {
+    color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.71;
+    order: 2;
+    flex: 0 1 35%;
+}
+
+@media (max-width: 1199px) {
+    .footer-inner-contact {
+        flex: 0 1 30%;
+    }
+}
+
+@media (max-width: 744px) {
+    .footer-inner-contact {
+        flex: 0 1 30%;
+    }
+}
+
+.footer-inner-menu {
+    font-size: 14px;
+    line-height: 1.71;
+    order: 3;
+    flex: 0 1 30%;
+
+    .menu-footer-primary-menu-container {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 744px) {
+    .footer-inner-menu {
+        flex: 0 1 30%;
+    }
+}
+
+.footer-inner-menu li {
+    list-style: none;
+}
+
+.footer-inner-menu ul {
+    padding-inline-start: unset;
+}
+
+.footer-inner-newsletter {
+    order: 4;
+    flex: 0 1 40%;
+
+    .footer-block-title {
+        color: var(--color-white);
+        font-size: 24px;
+        line-height: 1.17;
+        font-weight: 700;
+        margin-block-start: unset;
+        margin-block-end: unset;
+        text-transform: uppercase;
+        font-family: 'B Ruston47 1.5';
+    }
+
+    .footer-newsletter-text {
+        max-width: 300px ;
+        font-size:var(--font-size-small);
+        line-height: 1.71;
+        color: var(--color-white) ;
+        margin: 16px 0;
+    }
+
+    @media (max-width: 744px) {
+        .footer-inner-menu {
+            font-size: 22px;
+            line-height: 1.36;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer-inner-newsletter {
+        flex: 0 1 60%;
+        order: 2;
+    }
+}
+
+@media (max-width: 744px) {
+    .footer-inner-newsletter {
+        flex: 0 1 50%;
+        order: 2;
+    }
+}
+
+.footer-form {
+
+    .footer-form-email-fields {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    @media (max-width: 940px) {
+        .footer-form-email-fields {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width: 744px) {
+        .footer-form-email-fields {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .email-input {
+        background: rgba(255, 255, 255, 0.10);
+        width: 100%;
+        border-radius: 32px 0 0 32px;
+        color: rgba(255, 255, 255, 0.5);
+        border: unset;
+        padding: 12px 16px;
+    }
+
+    @media (max-width: 940px) {
+        .email-input {
+            border-radius: 32px;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 744px) {
+        .email-input {
+            border-radius: 32px 0 0 32px;
+        }
+    }
+
+    .footer-form-email-input-field {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .footer-form-email-input-button {
+        border-radius: 0 32px 32px 0;
+        background: rgba(255, 255, 255, 0.10);
+        padding: 6px;
+    }
+
+    @media (max-width: 940px) {
+        .footer-form-email-input-button {
+            border-radius: unset;
+            background: none;
+        }
+    }
+
+    @media (max-width: 744px) {
+        .footer-form-email-input-button {
+            border-radius: 0 32px 32px 0;
+            background: rgba(255, 255, 255, 0.10);
+        }
+    }
+
+    :focus {
+        outline: none;
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    .submit-button {
+        background: transparent;
+        border: 1px solid var(--color-white);
+        border-radius: 16px;
+        padding: 5px 16px;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+}
