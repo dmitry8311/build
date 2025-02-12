@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/cta",
+  "title": "CTA",
+  "description": "CTA block.",
+  "style": [ "file:./cta.css" ],
+  "category": "theme-aarsleff",
+  "icon": "megaphone",
+  "keywords": ["cta"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cta.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

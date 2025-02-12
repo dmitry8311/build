@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/timeline",
+  "title": "Timeline",
+  "description": "Timeline block",
+  "style": [ "file:./timeline.css" ],
+  "category": "theme-aarsleff",
+  "icon": "editor-insertmore",
+  "keywords": ["timeline"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "timeline.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

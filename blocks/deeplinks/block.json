@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/deeplinks",
+  "title": "Deeplinks",
+  "description": "Deeplinks block.",
+  "style": [ "file:./deeplinks.css" ],
+  "category": "theme-aarsleff",
+  "icon": "admin-links",
+  "keywords": ["deeplinks"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "deeplinks.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

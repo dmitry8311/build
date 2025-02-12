@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/single-column-text",
+  "title": "Single-column text",
+  "description": "Single column text.",
+  "style": [ "file:./single-column-text.css" ],
+  "category": "theme-aarsleff",
+  "icon": "align-center",
+  "keywords": ["single-column-text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "single-column-text.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

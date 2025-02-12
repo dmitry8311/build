@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/gallery",
+  "title": "Gallery",
+  "description": "Gallery block.",
+  "style": [ "file:./gallery.css" ],
+  "category": "theme-aarsleff",
+  "icon": "images-alt2",
+  "keywords": ["gallery"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "gallery.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

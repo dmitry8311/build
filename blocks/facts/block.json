@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/facts",
+  "title": "Facts",
+  "description": "Facts block",
+  "style": [ "file:./facts.css" ],
+  "category": "theme-aarsleff",
+  "icon": "list-view",
+  "keywords": ["facts"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "facts.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

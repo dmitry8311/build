@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/hero",
+  "title": "Hero",
+  "description": "A Hero block.",
+  "style": [ "file:./hero.css" ],
+  "category": "theme-aarsleff",
+  "icon": "superhero",
+  "keywords": ["hero"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "hero.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

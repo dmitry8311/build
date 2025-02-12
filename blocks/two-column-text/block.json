@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/two-column-text",
+  "title": "Two-column text",
+  "description": "Two column text.",
+  "style": [ "file:./two-column-text.css" ],
+  "category": "theme-aarsleff",
+  "icon": "columns",
+  "keywords": ["two-column-text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "two-column-text.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

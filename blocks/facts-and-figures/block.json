@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/facts-and-figures",
+  "title": "Facts and figures",
+  "description": "Facts and figures block",
+  "style": [ "file:./facts-and-figures.css" ],
+  "category": "theme-aarsleff",
+  "icon": "performance",
+  "keywords": ["figures"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "facts-and-figures.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

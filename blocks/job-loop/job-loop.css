@@ -1,0 +1,222 @@
+/* Main container for job listings with a background image, light blue color, and padding */
+.block-job-loop {
+    background: url('img/jobs-background.svg') var(--color-blue-lightest) no-repeat;
+    background-position: left 28px;
+    background-size: contain;
+    padding: 48px 14px;
+}
+
+/* Adjust styles for larger screens (min-width: 744px) */
+@media screen and (min-width: 744px) {
+    .block-job-loop {
+        background-position: left 79px;
+        background-size: inherit;
+        padding: 96px 50px;
+
+        /* Center the slick dots for carousel/slider */
+        .slick-dots {
+            justify-content: center;
+        }
+    }
+}
+
+/* Adjust styles for even larger screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .block-job-loop {
+        background-position: left top;
+        background-size: 59%;
+        padding: 96px 78px;
+    }
+}
+
+/* Styling for the headline within the job listings */
+.block-job-loop__headline {
+    font-family: var(--font-family-secondary);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--h2-line-heigth);
+    color: var(--color-toned-black);
+    text-transform: var(--text-transform-uppercase);
+    margin-bottom: 48px;
+}
+
+/* Adjust bottom margin for the headline on larger screens (min-width: 744px) */
+@media screen and (min-width: 744px) {
+    .block-job-loop__headline {
+        margin-bottom: 64px;
+    }
+}
+
+/* Styling for filter sections (locations and departments) */
+.block-job-loop__filter-locations,
+.block-job-loop__filter-departments {
+    margin-bottom: 64px;
+
+    /* Heading style within filters */
+    h5 {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-family: var(--font-family-secondary);
+        color: var(--color-toned-black);
+        font-size: var(--h5-font-size);
+        text-transform: var(--text-transform-uppercase);
+
+        /* Decorative line after heading */
+        &:after {
+            content: '';
+            height: 2px;
+            display: block;
+            width: 22px;
+            background: var(--color--primary);
+            flex: 0 0 auto;
+        }
+    }
+
+    /* Remove default styles for checkboxes */
+    label input[type="checkbox"] {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+    }
+
+    /* Styling for checkbox labels */
+    span {
+        color: var(--color-grey-dark-grey);
+        padding: 4px 12px;
+        border: 1px solid var(--color--primary);
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Styles for checked checkboxes */
+    input[type="checkbox"]:checked + span {
+        background: var(--color--primary);
+        color: var(--color-white);
+    }
+}
+
+/* Wrapper styles for filter sections */
+.block-job-loop__filter-locations-wrapper,
+.block-job-loop__filter-departments-wrapper {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Styling for job slides with grid layout */
+.block-job-loop__slide {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+}
+
+/* Adjust grid layout for larger screens (min-width: 744px) */
+@media screen and (min-width: 744px) {
+    .block-job-loop__slide {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Adjust grid layout for even larger screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .block-job-loop__slide {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Styling for individual job post with shadow and flex layout */
+.block-job-loop__post {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
+
+    /* Header styling within a job post */
+    .post__header {
+        padding: 32px 24px 0 24px;
+        margin-bottom: 24px;
+    }
+
+    /* Headline styling within a job post */
+    .post__headline {
+        font-family: var(--font-family-secondary);
+        font-size: var(--h4-font-size);
+        text-transform: var(--text-transform-uppercase);
+        color: var(--color-toned-black);
+    }
+
+    /* Content styling within a job post */
+    .post__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 24px 24px 24px;
+        color: var(--color-grey-dark-grey);
+    }
+
+    /* Adjust content layout for larger screens (min-width: 1200px) */
+    @media screen and (min-width: 1200px) {
+        .post__content {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 48px;
+            row-gap: 12px;
+        }
+    }
+
+    /* Styling for location and beginning information */
+    .content_type_job__location,
+    .content_type_job__beginning {
+        display: flex;
+        line-height: 1.71;
+        align-items: center;
+        gap: 8px;
+
+        /* Dot icon before the text */
+        &::before {
+            content: url('img/dot.svg');
+            display: block;
+            height: 1em;
+            line-height: normal;
+        }
+    }
+
+    /* Hide empty location elements */
+    .content_type_job__location:empty {
+        display: none;
+    }
+
+    /* Footer styling within a job post */
+    .post__footer {
+        margin: auto 0 0 auto;
+        padding: 12px 20px;
+    }
+
+    /* Link styling within a job post */
+    .post__link {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-weight: 500;
+        color: var(--color--primary);
+        line-height: 1.5;
+
+        /* Arrow icon after the link */
+        &::after{
+            content: url('img/arrow_up.svg');
+            display: block;
+        }
+
+        /* Hover effect for the arrow icon */
+        &:hover::after {
+            transform: translate(4px, -3px);
+            transition: 0.25s ease;
+        }
+    }
+}

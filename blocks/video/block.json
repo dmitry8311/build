@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/video",
+  "title": "Video",
+  "description": "Video block.",
+  "style": [ "file:./video.css" ],
+  "category": "theme-aarsleff",
+  "icon": "youtube",
+  "keywords": ["video"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "video.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

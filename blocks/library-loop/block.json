@@ -1,0 +1,17 @@
+{
+  "name": "aarsleff/library-loop",
+  "title": "Loop: Library",
+  "description": "Creates a list of libraries items.",
+  "style": [ "file:./library-loop.css" ],
+  "script": [ "file:./library-loop.js" ],
+  "category": "theme-aarsleff",
+  "icon": "id",
+  "keywords": ["loop"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "library-loop.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

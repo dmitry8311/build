@@ -1,0 +1,17 @@
+{
+  "name": "aarsleff/project-loop",
+  "title": "Loop: Projects",
+  "description": "Creates a list of jobs.",
+  "style": [ "file:./project-loop.css" ],
+  "script": [ "file:./project-loop.js" ],
+  "category": "theme-aarsleff",
+  "icon": "id",
+  "keywords": ["loop"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "project-loop.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "aarsleff/locations",
+  "title": "Locations",
+  "description": "Locations block",
+  "style": [ "file:./locations.css" ],
+  "script": [ "file:./locations.js" ],
+  "category": "theme-aarsleff",
+  "icon": "location",
+  "keywords": ["locations"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "locations.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,150 @@
+@import "/wp-content/themes/aarsleff/assets/css/_variables.css";
+
+
+.block-persons {
+    --block-persons__color--accent: var(--color--primary);
+    --block-persons__divider--width: 237px;
+    color: var(--color-toned-black);
+}
+
+.block_persons__content-wrapper {
+    padding: 48px 16px;
+}
+
+@media (min-width: 744px) {
+    .block_persons__content-wrapper {
+        padding: 64px 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block_persons__content-wrapper {
+        padding: 64px 48px;
+    }
+}
+
+.block_persons__persons {
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media (min-width: 1200px) {
+    .block_persons__persons {
+        padding: 24px 141px 48px 141px;
+
+        .block_persons__person:nth-child(3n+2) {
+            margin-left: 95px;
+        }
+
+        .block_persons__person:nth-child(3n+3) {
+            margin-left: 191px;
+        }
+    }
+}
+
+.block_persons__topline {
+    margin-bottom: 16px;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--block-persons__color--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 744px) {
+    .block_persons__topline {
+        margin-bottom: 24px;
+    }
+}
+
+.block_persons__headline {
+    font-size: var(--h2-font-size);
+    font-family: var(--font-family-secondary);
+    max-width: 490px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 744px) {
+    .block_persons__headline {
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block_persons__headline {
+        margin-bottom: 24px;
+    }
+}
+
+.block_persons__intro {
+    max-width: 490px;
+    font-size: var(--font-size-base);
+    line-height: var(--p-line-height);
+}
+
+.block_persons__person {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 744px) {
+    .block_persons__person {
+        flex-direction: row;
+        align-items: end;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block_persons__person {
+        gap: 79px;
+    }
+}
+
+.block_persons__person-image img {
+    width: 241px;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .block_persons__person-image img  {
+        width: 272px;
+    }
+}
+
+.block_persons__person-info {
+    max-width: 490px;
+}
+
+.block_persons__person-quote {
+    font-size: var(--font-size-base);
+    line-height: var(--p-line-height);
+
+    &::after {
+        height: 2px;
+        margin: 24px 0 24px 0;
+        display: block;
+        width: var(--block-persons__divider--width);
+        background: var(--block-persons__color--accent);
+        content: '';
+    }
+}
+
+.block_persons__person-name {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--color--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.block_persons__person-position {
+    font-size: var(--font-size-small);
+    line-height: 1.714;
+    color: var(--color-grey-dark-grey);
+}

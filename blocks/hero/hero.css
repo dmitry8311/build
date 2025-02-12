@@ -1,0 +1,47 @@
+@import "/wp-content/themes/aarsleff/assets/css/_variables.css";
+
+.block-hero {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.block-hero__media-image img,
+.block-hero__slider img,
+.block-hero__video {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 744px) {
+    .block-hero {
+        padding-bottom: unset;
+    }
+
+    .block-hero__media-image img,
+    .block-hero__slider img,
+    .block-hero__video {
+        height: 492px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .block-hero__media-image img,
+    .block-hero__slider img,
+    .block-hero__video {
+        height: 564px;
+    }
+}
+
+.block-hero__slider-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.block-hero__slider .slick-current .block-hero__slider-item {
+    opacity: 1;
+}

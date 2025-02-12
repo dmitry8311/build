@@ -1,0 +1,47 @@
+@import "/wp-content/themes/aarsleff/assets/css/_variables.css";
+
+.block-cta {
+    margin:64px 0 50px 0;
+    padding: var(--block--padding);
+    color: var(--color-white);
+    text-align: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 744px) {
+    .block-cta {
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .block-cta {
+        margin:64px 0 48px 0;
+    }
+}
+
+.block_cta__headline {
+    font-family: var(--font-family-secondary);
+    text-transform: var(--text-transform-uppercase);
+    line-height: var(--h2-line-heigth);
+    font-size: var(--h2-font-size);
+    margin: var(--h2-boxed-margin);
+    max-width: 677px;
+
+    h2, p {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+.block_cta__intro {
+    font-size: 15px;
+    line-height: var(--p-line-height);
+    margin: var(--p-boxed-margin);
+    max-width: 617px;
+}
+
+.block_cta__link a {
+    border: 1px solid var(--color-blue-lightest);
+    padding: 4px 24px;
+    border-radius: 16px;color: var(--color-white);
+    line-height: var(--p-line-height);
+}

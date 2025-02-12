@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/two-column-text-manual",
+  "title": "Two-column text manual",
+  "description": "Two column text manual",
+  "style": [ "file:./two-column-text-manual.css" ],
+  "category": "theme-aarsleff",
+  "icon": "admin-settings",
+  "keywords": ["two-column-text-manual"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "two-column-text-manual.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/persons",
+  "title": "Persons",
+  "description": "Persons block.",
+  "style": [ "file:./persons.css" ],
+  "category": "theme-aarsleff",
+  "icon": "businessperson",
+  "keywords": ["persons"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "persons.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

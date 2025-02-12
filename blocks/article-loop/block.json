@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/article-loop",
+  "title": "Loop: Articles",
+  "description": "Creates a list of articles.",
+  "style": [ "file:./article-loop.css" ],
+  "category": "theme-aarsleff",
+  "icon": "loop",
+  "keywords": ["loop"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "article-loop.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

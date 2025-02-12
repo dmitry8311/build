@@ -1,0 +1,16 @@
+{
+  "name": "aarsleff/related-articles",
+  "title": "Related articles",
+  "description": "Related articles",
+  "style": [ "file:./related-articles.css" ],
+  "category": "theme-aarsleff",
+  "icon": "excerpt-view",
+  "keywords": ["related articles"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "related-articles.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}
